@@ -36,12 +36,14 @@ const MenuLink = ({ label, to, activeOnlyWhenExact }) => {
 class Menu extends Component {
     render() {
         return (
-            <div className="navbar navbar-default">
-                <a className="navbar-brand">CALL API</a>
-                <ul className="nav navbar-nav">
-                    {this.showMenus(menus)}
-                </ul>
-            </div>
+            <div>
+                <div className="navbar navbar-default">
+                    <a className="nav navbar-brand">CALL API</a>
+                    <ul className="nav navbar-nav">
+                        {this.showMenus(menus)}
+                    </ul>
+                </div>
+            </div>      
         );
     }
 

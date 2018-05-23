@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 import Menu from './../Menu/Menu';
 import routes from './../../routes';
-import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Switch, Route, BrowserRouter as Router, HashRouter } from 'react-router-dom';
 
 class App extends Component {
     render() {
         return (
-            <Router>
+            <HashRouter>
                 <div>
                     <Menu />
                     <div className="container">
@@ -16,7 +16,7 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
-            </Router>
+            </HashRouter>
         );
     }
 

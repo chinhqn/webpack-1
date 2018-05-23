@@ -11,6 +11,7 @@ class ProductItem extends Component {
 
     render() {
         var { product, index } = this.props;
+            // console.log(product);
         var statusName = product.status ? 'Còn Hàng' : 'Hết Hàng';
         var statusClass = product.status ? 'warning' : 'default';
         return (
